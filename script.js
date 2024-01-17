@@ -9,6 +9,20 @@ document.addEventListener('click', function (event) {
         console.log('Link clicked but prevented navigation.');
     }
 });
+
+window.addEventListener('beforeunload', function (event) {
+    // Check if the URL about to be navigated to matches the one you want to prevent
+    const targetUrl = 'https://gsap.com/requires-membership/?plugin=DrawSVGPlugin&source=trial';
+    if (window.location.href === targetUrl) {
+        // Prevent the redirection
+        event.preventDefault();
+        
+        // Optionally, you can handle the prevention in a custom way
+        console.log('Redirect prevented.');
+    }
+});
+
+
 gsap.registerPlugin(ScrollTrigger, DrawSVGPlugin, MotionPathPlugin,);
 
 gsap.set('body', {
