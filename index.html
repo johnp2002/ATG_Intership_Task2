@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Snapping Example</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="scroll-container  ">
+        <div class="prog ">
+            <div class="rngg  ">
+
+
+                <div class="">
+
+                    <svg width="414" height="414" viewBox="0 0 414 414" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="svg with paths 1">
+                            <path id="Transparent_Ring" opacity="0.4"
+                                d="M84.2 85C115.5 53.5 158.9 34 206.9 34C302.4 34 379.9 111.5 379.9 207C379.9 302.5 302.4 380 206.9 380C159.1 380 115.9 360.6 84.6 329.3"
+                                stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                            <path id="Opaque_Ring"
+                                d="M84.2 85C115.5 53.5 158.9 34 206.9 34C302.4 34 379.9 111.5 379.9 207C379.9 302.5 302.4 380 206.9 380C159.1 380 115.9 360.6 84.6 329.3"
+                                stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-dasharray="10 1000" />
+                            <g id="Dots1">
+                                <g id="Group">
+                                    <path id="Vector"
+                                        d="M84 80C80.7 80 78 82.7 78 86C78 89.3 80.7 92 84 92C87.3 92 90 89.3 90 86C90 82.7 87 80 84 80Z"
+                                        fill="#0092FF" />
+                                </g>
+                                <g id="Group_2">
+                                    <path id="Vector_2"
+                                        d="M84 80C80.7 80 78 82.7 78 86C78 89.3 80.7 92 84 92C87.3 92 90 89.3 90 86C90 82.7 87 80 84 80Z"
+                                        stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                                </g>
+                            </g>
+                            <g id="Dots2">
+                                <g id="Group_3">
+                                    <path id="Vector_3"
+                                        d="M206.8 29C203.5 29 200.8 31.7 200.8 35C200.8 38.3 203.5 41 206.8 41C210.1 41 212.8 38.3 212.8 35C212.8 31.7 210.1 29 206.8 29Z"
+                                        fill="#0092FF" />
+                                </g>
+                                <g id="Group_4">
+                                    <path id="Vector_4"
+                                        d="M206.8 29C203.5 29 200.8 31.7 200.8 35C200.8 38.3 203.5 41 206.8 41C210.1 41 212.8 38.3 212.8 35C212.8 31.7 210.1 29 206.8 29Z"
+                                        stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                                </g>
+                            </g>
+                            <g id="Dots3">
+                                <g id="Group_5">
+                                    <path id="Vector_5"
+                                        d="M332 85C328.7 85 326 87.7 326 91C326 94.3 328.7 97 332 97C335.3 97 338 94.3 338 91C338 87.7 335 85 332 85Z"
+                                        fill="#0092FF" />
+                                </g>
+                                <g id="Group_6">
+                                    <path id="Vector_6"
+                                        d="M332 85C328.7 85 326 87.7 326 91C326 94.3 328.7 97 332 97C335.3 97 338 94.3 338 91C338 87.7 335 85 332 85Z"
+                                        stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                                </g>
+                            </g>
+                            <g id="Dots4">
+                                <g id="Group_7">
+                                    <path id="Vector_7"
+                                        d="M380 205C376.7 205 374 207.7 374 211C374 214.3 376.7 217 380 217C383.3 217 386 214.3 386 211C386 207.7 383 205 380 205Z"
+                                        fill="#0092FF" />
+                                </g>
+                                <g id="Group_8">
+                                    <path id="Vector_8"
+                                        d="M380 205C376.7 205 374 207.7 374 211C374 214.3 376.7 217 380 217C383.3 217 386 214.3 386 211C386 207.7 383 205 380 205Z"
+                                        stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                                </g>
+                            </g>
+                            <g id="Dots5">
+                                <g id="Group_9">
+                                    <path id="Vector_9"
+                                        d="M335 315C331.7 315 329 317.7 329 321C329 324.3 331.7 327 335 327C338.3 327 341 324.3 341 321C341 317.7 340 315 335 315Z"
+                                        fill="#0092FF" />
+                                </g>
+                                <g id="Group_10">
+                                    <path id="Vector_10"
+                                        d="M335 315C331.7 315 329 317.7 329 321C329 324.3 331.7 327 335 327C338.3 327 341 324.3 341 321C341 317.7 340 315 335 315Z"
+                                        stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                                </g>
+                            </g>
+                            <g id="Dots6">
+                                <g id="Group_11">
+                                    <path id="Vector_11"
+                                        d="M210 375C206.7 375 204 377.7 204 381C204 384.3 206.7 387 210 387C213.3 387 216 384.3 216 381C216 377.7 215 375 210 375Z"
+                                        fill="#0092FF" />
+                                </g>
+                                <g id="Group_12">
+                                    <path id="Vector_12"
+                                        d="M210 375C206.7 375 204 377.7 204 381C204 384.3 206.7 387 210 387C213.3 387 216 384.3 216 381C216 377.7 215 375 210 375Z"
+                                        stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                                </g>
+                            </g>
+                            <g id="Dots7">
+                                <g id="Group_13">
+                                    <path id="Vector_13"
+                                        d="M88 324C84.7 324 82 326.7 82 330C82 333.3 84.7 336 88 336C91.3 336 94 333.3 94 330C94 326.7 92 324 88 324Z"
+                                        fill="#0092FF" />
+                                </g>
+                                <g id="Group_14">
+                                    <path id="Vector_14"
+                                        d="M88 324C84.7 324 82 326.7 82 330C82 333.3 84.7 336 88 336C91.3 336 94 333.3 94 330C94 326.7 92 324 88 324Z"
+                                        stroke="white" stroke-width="2" stroke-miterlimit="10" />
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+
+                </div>
+
+                <div id="sec1tit"
+                    class="position-absolute ovrtxt  z-3 text-white d-flex align-items-end overflow-hidden   flex-column ">
+
+                    <h1 class="fs-1 fw-bold ">
+                        25M+ Downloads
+                    </h1>
+                    <p class="fs-6">on appstore & google playstore</p>
+                </div>
+                <div id="sec2tit"
+                    class="position-absolute ovrtxt  z-3 text-white d-flex align-items-end overflow-hidden  flex-column  ">
+                    <p class="align-self-baseline mb-0  ">The Next Big Thing</p>
+                    <h1 class="fs-1 fw-bold ">
+                        Blockchain
+                    </h1>
+                    <p class="fs-6">Revolutioin</p>
+                </div>
+                <div id="sec3tit"
+                    class="position-absolute ovrtxt  z-3 text-white d-flex align-items-end overflow-hidden  flex-column   ">
+                    <p class="align-self-baseline mb-0  ">Refining</p>
+                    <h1 class="fs-1 fw-bold ">
+                        <img width="150px" src="ScrollAnimation Task Assets/nasa-mobile-app.png" alt="">
+                    </h1>
+                    <p class="fs-6">Algorithms</p>
+                </div>
+                <div id="sec4tit"
+                    class="position-absolute ovrtxt  z-3 text-white d-flex align-items-end  overflow-hidden flex-column    ">
+                    <p class="align-self-baseline mb-0  ">Text Headline</p>
+                    <h1 class="fs-1 fw-bold ">
+                        Text Headline
+                    </h1>
+                    <p class="fs-6">Footer headline</p>
+                </div>
+                <div id="sec5tit"
+                    class="position-absolute ovrtxt  z-3 text-white d-flex align-items-end  overflow-hidden flex-column    ">
+                    <p class="align-self-baseline mb-0  ">Developing ERP Solution for</p>
+                    <h1 class="fs-1 fw-bold ">
+                        Text Headline
+                    </h1>
+                    <p class="fs-6">in furniture industry</p>
+                </div>
+                <div id="sec6tit"
+                    class="position-absolute ovrtxt  z-3 text-white d-flex align-items-end overflow-hidden  flex-column   ">
+                    <p class="align-self-baseline mb-0  ">Biggest Classifieds</p>
+                    <h1 class="fs-1 fw-bold ">
+                        East Asia
+                    </h1>
+                    <p class="fs-6">Countries</p>
+                </div>
+                <div id="sec7tit"
+                    class="position-absolute ovrtxt  z-3 text-white d-flex align-items-end overflow-hidden  flex-column   ">
+                    <p class="align-self-baseline mb-0  ">Biggest Classifieds</p>
+                    <h1 class="fs-1 fw-bold ">
+                        East Asia
+                    </h1>
+                    <p class="fs-6">Countries</p>
+                </div>
+            </div>
+
+            <div id="sec1det" class="w-100 p-3 text-white ">
+                <div class="d-none ">
+                    <img class="secMg "
+                        src="ScrollAnimation Task Assets/world-communication-awards-for-best-digital-experience.png"
+                        alt="">
+                </div>
+                <h1 class="fs-1 fw-semibold  overflow-hidden ">
+                    <span id="sec1tit">ABC123</span>
+                    <span id="sec2tit">ABC234</span>
+                    <span id="sec3tit">ABC345</span>
+                    <span id="sec4tit">ABC456</span>
+                    <span id="sec5tit">ABC678</span>
+                    <span id="sec6tit">ABC23478</span>
+                    <span id="sec7tit">ABC23478</span>
+                </h1>
+                <p class="w-50 mb-5 overflow-hidden ">
+                    <span id="sec1tit">
+                        We are the best web development
+                        company in the world
+                    </span>
+                    <span id="sec2tit">
+
+                        We are the best web development
+                        company in the world
+                    </span>
+                    <span id="sec3tit">
+                        We are the best
+                        web development company
+                        in the world
+                    </span>
+                    <span id="sec4tit">
+                        We are the best
+                        web development company
+                        in the world
+                    </span>
+                    <span id="sec5tit">
+                        Best since 2017
+                        We offer wide range of
+                        web development and app development.
+                    </span>
+                    <span id="sec6tit">
+                        We are the best
+                        web development company
+                        in the world
+                    </span>
+                    <span id="sec7tit">
+                        We are the best
+                        web development company
+                        in the world
+                    </span>
+                </p>
+                <div class="d-flex justify-content-between fw-semibold ">
+
+                    <p>View Case Study</p>
+                    <p style="letter-spacing: 5px;">SKIP</p>
+                </div>
+            </div>
+        </div>
+        <section class="justify-content-center  justify-content-lg-end ">
+            <div class="side  ">
+                <div>
+
+                    <img class="sec1mob1" width="85%"
+                        src="ScrollAnimation Task Assets/nexgtv-entertainment-mobile-app-development.png" alt="">
+                </div>
+                <div>
+
+                    <img class="sec1mob1" style="margin-left: -70px;" width="100%"
+                        src="ScrollAnimation Task Assets/nexgtv-mobile-app-ui-design.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="side22" style="">
+                <div>
+
+                    <img class="sec2mob1" width="100%"
+                        src="ScrollAnimation Task Assets/veme-blockchain-app-developed.png" alt="">
+                </div>
+                <div style="justify-content: flex-start;">
+
+                    <img class="ms-0  sec2mob2" width="100%" src="ScrollAnimation Task Assets/veme-app-ui-design.png"
+                        alt="">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="side2" style="">
+                <div>
+
+                    <img class="sec3mob1" width="100%" style="transform: scale(1.2); margin-bottom: 50px;"
+                        src="ScrollAnimation Task Assets/nasa-fitness-tracking-mobile-app.png" alt="">
+                </div>
+                <div style="justify-content: flex-start;">
+
+                    <img class="ms-0 sec3mob2" width="100%" style="margin-top: -100px;"
+                        src="ScrollAnimation Task Assets/measure-total-body-weight-through-fitness-app.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="side4" style="">
+
+                <div style="flex-direction: column; justify-content: space-between;">
+                    <img class="sec4pzz" width="90%" src="ScrollAnimation Task Assets/pizza_box.png" alt="">
+
+                    <img class="sec4mob1" style="margin-left: 50%;" width="70%"
+                        src="ScrollAnimation Task Assets/domi-img1.png" alt="">
+                </div>
+                <div style="align-items: flex-start; flex-direction: column;">
+                    <img class="sec4brd"
+                        style="margin-top: -20px; transform: scale(-1) translate(-173px, -6px);margin-bottom: -50px;"
+                        width="40%" src="ScrollAnimation Task Assets/dominos-bread.png" alt="">
+
+                    <img class="ms-0 sec4mob2" width="70%"
+                        src="ScrollAnimation Task Assets/ux-strategy-for-mobile-app-devlopment.png" alt="">
+                    <img class="sec4brd2" style="margin-left: 100px; margin-top: 30px;" width="75%"
+                        src="ScrollAnimation Task Assets/dominos-bread1.png" alt="">
+                </div>
+
+            </div>
+        </section>
+        <section>
+            <div class="side5" style="">
+                <div>
+
+                    <img class="sec5mob1" width="100%" style="padding-bottom: 100px;"
+                        src="ScrollAnimation Task Assets/karavan-social-networking-app-screen.png" alt="">
+                    <img class="ms-0 sec5mob2" width="100%" style="padding-top: -50px;"
+                        src="ScrollAnimation Task Assets/karavan_2.png" alt="">
+                </div>
+                <div>
+
+                    <img class="sec5mob3" width="100%" style="margin-bottom: -70px; padding-top: 131px;"
+                        src="ScrollAnimation Task Assets/social-networking-app-case-study.png" alt="">
+                    <img class="sec5mob4" width="100%" style="padding-top: 150px;"
+                        src="ScrollAnimation Task Assets/karavan-social-networking-app-screen-2.png" alt="">
+                </div>
+                <div>
+
+                    <img class="sec5mob5" width="100%"
+                        src="ScrollAnimation Task Assets/developers-for-social-media-app.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="side6">
+                <img class="sec6hand" class=" " src="ScrollAnimation Task Assets/erp-app-development-service.png"
+                    alt="">
+                <!-- <img class="inter" src="ScrollAnimation Task Assets/interior.jpg" alt=""> -->
+            </div>
+        </section>
+        <section>
+            <div class="side7" style="">
+                <div style="z-index: 3;margin-right: -30px;">
+
+                    <img class="sec7mob1" style=" margin-bottom: -100px; " width="125%"
+                        src="ScrollAnimation Task Assets/melltoo-img2.png" alt="">
+                </div>
+                <div>
+
+                    <img class="ms-0 sec7mob2" width="100%" style="margin-bottom: -50px;"
+                        src="ScrollAnimation Task Assets/melltoo-img1.png" alt="">
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/MotionPathPlugin.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
