@@ -1,3 +1,14 @@
+
+document.addEventListener('click', function (event) {
+    // Check if the clicked element is a link
+    if (event.target.tagName === 'A') {
+        // Prevent the default behavior of the link (navigation)
+        event.preventDefault();
+        
+        // Optionally, you can handle the link click in a custom way
+        console.log('Link clicked but prevented navigation.');
+    }
+});
 gsap.registerPlugin(ScrollTrigger, DrawSVGPlugin, MotionPathPlugin,);
 
 gsap.set('body', {
